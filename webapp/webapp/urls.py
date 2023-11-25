@@ -22,6 +22,7 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register('users', views.UserView)
+router.register('zahtjevi', views.ZahtjevView)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
