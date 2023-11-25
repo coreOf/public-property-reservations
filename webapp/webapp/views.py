@@ -15,3 +15,30 @@ class ZahtjevView(viewsets.ModelViewSet):
     serializer_class = ZahtjevSerializer
     permission_classes = [permissions.AllowAny]
 
+def index(request):
+    return render(
+        request,
+        'webapp/home-mobile.html', {
+            "zahtjevi": Zahtjev.objects.all()
+        }
+    )
+
+def prostori(request):
+    return render(
+        request,
+        'webapp/prostori.html'
+    )
+
+def prostor(request):
+    return render(
+        request,
+        'webapp/single-prostor.html'
+    )
+
+def search(request):
+    return render(
+        request,
+        'webapp/home-mobile-search.html', {
+            "zahtjevi": Zahtjev.objects.all()
+        }
+    )

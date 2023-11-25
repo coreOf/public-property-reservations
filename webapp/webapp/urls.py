@@ -26,7 +26,11 @@ router.register('zahtjevi', views.ZahtjevView)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
+    path('', views.index),
+    path('prostori', views.prostori),
+    path('prostor', views.prostor),
+    path('search', views.search),
     path('auth/', include('rest_framework.urls')),
     path('login/', TokenObtainPairView.as_view()),
     path('refresh/', TokenRefreshView.as_view()),
