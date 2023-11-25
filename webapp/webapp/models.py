@@ -5,7 +5,14 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
 
 class Zahtjev(models.Model):
-    vrsta_prijavitelja = models.CharField(max_length=255)
+    vrsta_prijavitelja = models.CharField(
+        max_length = 30,
+        choices = [
+            ("Fizicka_osoba", "Fizička osoba"),
+            ("Pravna_osoba", "Pravna osoba"),
+            ("Neprofitna_organizacija", "Neprofitna organizacija"),
+            ("Drugo", "Drugo")
+        ])
     ime_prezime_naziv = models.CharField(max_length=255)
     prebivaliste_sjediste = models.CharField(max_length=255)
     zastupnik = models.CharField(max_length=255)
