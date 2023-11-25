@@ -65,7 +65,6 @@ class Zahtjev(models.Model):
             ("Odbijen_uvjetno", "Uvjetno odbijen")
         ])
     datum_unosa = models.DateTimeField()
-    datum_unosa = models.DateTimeField()
     osoba_unijela = models.CharField(max_length=255)
     osoba_obradila = models.CharField(max_length=255)
     token_potvrda_maila = models.CharField(max_length=255)
