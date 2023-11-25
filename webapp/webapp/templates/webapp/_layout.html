@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}Title{% endblock %}</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        {% block headscripts %}<script></script>{% endblock %}
+    </head>
+    <body class="sb-nav-fixed">
+        {% block content %}Content{% endblock %}       
+    </body>
+</html>

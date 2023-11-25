@@ -16,29 +16,16 @@ class ZahtjevView(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny]
 
 def index(request):
-    return render(
-        request,
-        'webapp/home-mobile.html', {
-            "zahtjevi": Zahtjev.objects.all()
-        }
-    )
+    return render(request, 'webapp/home-mobile.html')
 
 def prostori(request):
-    return render(
-        request,
-        'webapp/prostori.html'
-    )
+    return render(request, 'webapp/prostori.html')
 
 def prostor(request):
-    return render(
-        request,
-        'webapp/single-prostor.html'
-    )
+    return render(request, 'webapp/single-prostor.html')
 
 def search(request):
-    return render(
-        request,
-        'webapp/home-mobile-search.html', {
-            "zahtjevi": Zahtjev.objects.all()
-        }
-    )
+    return render(request, 'webapp/home-mobile-search.html')
+
+def request_demo(request):
+    return render(request, 'webapp/request_demo.html')

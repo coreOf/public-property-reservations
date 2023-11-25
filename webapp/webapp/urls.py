@@ -31,6 +31,7 @@ urlpatterns = [
     path('prostori', views.prostori),
     path('prostor', views.prostor),
     path('search', views.search),
+    path('request-demo', views.request_demo),
     path('auth/', include('rest_framework.urls')),
     path('login/', TokenObtainPairView.as_view()),
     path('refresh/', TokenRefreshView.as_view()),

@@ -1,0 +1,79 @@
+{% extends 'webapp/_layout.html' %}
+
+{% block title %}Layout demo{% endblock %}
+
+{% block content %}
+<div style="zoom: 2;">
+    HELLO WORLD<br/>
+    <button id="fetch">TEST FETCH BY ID</button><br/>
+    <button id="add">TEST ADD</button><br/>
+    <button id="confirm">TEST Confirm</button><br/>
+    <button id="reject">TEST Reject</button><br/>
+    <button id="return">TEST Return</button><br/>
+    <textarea id="data" style="width: 95%; height: 20em;"></textarea><br/>
+</div>
+{% endblock %}
+
+{% block headscripts %}
+<script>
+    function test_fetch(on_success = null) {
+        if ($("#data").val()) {
+            let request_data = JSON.parse($("#data").val());
+            $.get("/api/zahtjevi/" + request_data['id'], function(data) {
+                console.log(data);
+                $("#data").val(JSON.stringify(data, null, '\t'));
+                if (on_success) {
+                    on_success();
+                }
+            });
+        } else {
+            $.get("/api/zahtjevi", function(data) {
+                console.log(data);
+                $("#data").val(JSON.stringify(data, null, '\t'));
+                if (on_success) {
+                    on_success();
+                }
+            });
+        }
+    }
+    function test_add() {
+        let request_data = JSON.parse($("#data").val());
+        $.post("/api/zahtjevi/", request_data, function(response_data) {
+            console.log(response_data);
+            $("#data").val(JSON.stringify(response_data, null, '\t'));
+        });
+    }
+    function change_status(status) {
+        /* This is based on the assumption that only id was provided as input */
+        test_fetch(function() {
+            let request_data = JSON.parse($("#data").val());
+            request_data['status'] = status;
+            $.ajax({
+                url: '/api/zahtjevi/' + request_data['id'] + "/",
+                type: 'PUT',
+                data: request_data,
+                success: function(result) {
+                    console.log(result);
+                    $("#data").val(JSON.stringify(result, null, '\t'));
+                }
+            });
+        });
+    }
+    function test_confirm() {
+        change_status("Prihvacen");
+    }
+    function test_reject() {
+        change_status("Odbijen");
+    }
+    function test_return() {
+        change_status("Odbijen_uvjetno");
+    }
+    $(function() {
+        $("#fetch").click(test_fetch);
+        $("#add").click(test_add);
+        $("#confirm").click(test_confirm);
+        $("#reject").click(test_reject);
+        $("#return").click(test_return);
+    });
+</script>
+{% endblock %}
