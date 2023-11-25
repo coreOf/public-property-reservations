@@ -15,18 +15,18 @@ class Zahtjev(models.Model):
         ])
     ime_prezime_naziv = models.CharField(max_length=255)
     prebivaliste_sjediste = models.CharField(max_length=255)
-    zastupnik = models.CharField(max_length=255)
+    zastupnik = models.CharField(max_length=255, blank=True)
     oib_mbs = models.CharField(max_length=255)
     tel_mob = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
 
     # Da se ne radi jos jedna tablica, sve ce ici ovdje...
     # Lokacija je uvijek Grad Zagreb
-    gradska_cetvrt = models.CharField(max_length=255)
-    mjesni_odbor = models.CharField(max_length=255)
-    naziv_prostora = models.CharField(max_length=255)
-    adresa_prostora = models.CharField(max_length=255)
-    kvadratura = models.IntegerField()
+    gradska_cetvrt = models.CharField(max_length=255, blank=True)
+    mjesni_odbor = models.CharField(max_length=255, blank=True)
+    naziv_prostora = models.CharField(max_length=255, blank=True)
+    adresa_prostora = models.CharField(max_length=255, blank=True)
+    kvadratura = models.IntegerField(blank=True)
     opis = models.CharField(max_length=255)
     # Ako se uspije dodati, moze biti i slika pohranjena na frontendu
     slika = models.CharField(max_length=255)
@@ -60,7 +60,7 @@ class Zahtjev(models.Model):
         ])
     
     # Ideja - napravi se upload folder za zahtjev ako je potrebno, pa je ovo folder
-    files = models.CharField(max_length=255)
+    files = models.CharField(max_length=255, blank=True)
 
     # Pomocna polja za obradu
     status = models.CharField(
@@ -72,9 +72,9 @@ class Zahtjev(models.Model):
             ("Odbijen_uvjetno", "Uvjetno odbijen")
         ])
     datum_unosa = models.DateTimeField()
-    osoba_unijela = models.CharField(max_length=255)
-    osoba_obradila = models.CharField(max_length=255)
-    token_potvrda_maila = models.CharField(max_length=255)
+    osoba_unijela = models.CharField(max_length=255, blank=True)
+    osoba_obradila = models.CharField(max_length=255, blank=True)
+    token_potvrda_maila = models.CharField(max_length=255, blank=True)
 
     # Field can be used to quickly extend
-    freeform = models.CharField(max_length=255)
+    freeform = models.CharField(max_length=255, blank=True)
