@@ -1,10 +1,17 @@
+{% extends 'webapp/_layout.html' %}
+
+
+{% block title %}Layout demo{% endblock %}
+
+{% block content %}
+{% load static %}
 <div style="width: 1440px; height: 2560px; position: relative; background: white">
     <div style="left: 100px; top: 1844px; position: absolute; color: #8EAFDD; font-size: 200px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">1</div>
     <div style="left: 233px; top: 1947px; position: absolute; color: #072447; font-size: 96px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">Pretraži prostore</div>
     <div style="width: 1465px; height: 225px; left: -25px; top: 1527px; position: absolute">
       <div style="width: 1440px; height: 200px; left: 25px; top: 25px; position: absolute">
         <div style="width: 1440px; height: 200px; left: 0px; top: 0px; position: absolute; background: #8EAFDD"></div>
-        <div style="left: 904px; top: 62px; position: absolute; color: white; font-size: 64px; font-family: Rubik; font-weight: 400; word-wrap: break-word">Pronađi prostor</div>
+        <div style="left: 904px; top: 62px; position: absolute; color: white; font-size: 64px; font-family: Rubik; font-weight: 400; word-wrap: break-word"><a href="/prostori">Pronađi prostor</a></div>
       </div>
       <div style="width: 850px; height: 225px; left: 0px; top: 0px; position: absolute">
         <div style="width: 850px; height: 225px; left: 0px; top: 0px; position: absolute; background: #072447; border-radius: 25px"></div>
@@ -12,7 +19,7 @@
       </div>
     </div>
     <div style="width: 1440px; height: 1116px; left: 0px; top: 436px; position: absolute">
-      <img style="width: 1440px; height: 1116px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1440x1116" />
+      <img style="width: 1440px; height: 1116px; left: 0px; top: 0px; position: absolute" src="{% static 'webapp/pexels-green-building.jpg' %}" />
       <div style="width: 1440px; height: 1116px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.25)"></div>
     </div>
     <div style="left: 100px; top: 1029px; position: absolute"><span style="color: white; font-size: 128px; font-family: Rubik; font-weight: 600; word-wrap: break-word">Pitaj Katicu</span><span style="color: white; font-size: 128px; font-family: Rubik; font-weight: 400; word-wrap: break-word"> i unajmi<br/>gradski prostor!</span></div>
@@ -25,21 +32,8 @@
         <div style="width: 104px; height: 0px; left: 26px; top: 78px; position: absolute; border: 5px white solid"></div>
         <div style="width: 104px; height: 0px; left: 26px; top: 117px; position: absolute; border: 5px white solid"></div>
       </div>
-      <div style="width: 396.51px; height: 156px; left: 50px; top: 50px; position: absolute">
-        <div style="width: 18.61px; height: 25.82px; left: 196.97px; top: 30.91px; position: absolute; background: white"></div>
-        <div style="width: 16.18px; height: 24.91px; left: 220.29px; top: 31.36px; position: absolute; background: white"></div>
-        <div style="width: 18.92px; height: 24.90px; left: 238.80px; top: 31.37px; position: absolute; background: white"></div>
-        <div style="width: 19.22px; height: 24.90px; left: 261.36px; top: 31.37px; position: absolute; background: white"></div>
-        <div style="width: 25.52px; height: 42.02px; left: 197.63px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 31.91px; height: 42.02px; left: 226.94px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 31.40px; height: 43.56px; left: 262.80px; top: 83.01px; position: absolute; background: white"></div>
-        <div style="width: 27.29px; height: 42.03px; left: 302.14px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 25.32px; height: 42.02px; left: 336.31px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 27.59px; height: 42.03px; left: 368.92px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 5.15px; height: 156px; left: 158.73px; top: 0px; position: absolute; background: white"></div>
-        <div style="width: 127.53px; height: 156px; left: 0px; top: 0px; position: absolute; background: white"></div>
+      <img style="width: 396.51px; height: 156px; left: 50px; top: 50px; position: absolute" src="{% static 'webapp/zagreb-zicer-logo.svg' %}"></div>
       </div>
-    </div>
     <div style="width: 1440px; height: 180px; left: 0px; top: 0px; position: absolute">
       <div style="width: 1440px; height: 180px; left: 0px; top: 0px; position: absolute; background: #1F1F1F"></div>
       <div style="width: 100px; height: 100px; left: 40px; top: 40px; position: absolute">
@@ -83,3 +77,4 @@
     <div style="left: 138px; top: 2397px; position: absolute; color: black; font-size: 64px; font-family: Rubik; font-weight: 400; word-wrap: break-word">lokacija</div>
     <div style="left: 138px; top: 2484px; position: absolute; color: black; font-size: 64px; font-family: Rubik; font-weight: 400; word-wrap: break-word">termin</div>
 </div>
+{% endblock %}
