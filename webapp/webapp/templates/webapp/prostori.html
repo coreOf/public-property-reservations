@@ -1,215 +1,136 @@
+{% extends 'webapp/_layout.html' %}
+
+
+{% block title %}Layout demo{% endblock %}
+
+{% block content %}
+{% load static %}
 <div style="width: 1440px; height: 2560px; position: relative; background: white">
     <div style="width: 1260px; height: 560px; left: 90px; top: 808px; position: absolute">
       <div style="width: 1260px; height: 560px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 20px"></div>
-      <img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="https://via.placeholder.com/650x560" />
+      <a href="/prostor"><img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="{% static 'webapp/precko2-dvorana.jpg' %}" /></a>
       <div style="left: 714px; top: 40px; position: absolute; color: #072447; font-size: 72px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">Velika dvorana</div>
       <div style="left: 975px; top: 132px; position: absolute; color: #8EAFDD; font-size: 48px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">MO Prečko</div>
       <div style="width: 235px; height: 80px; left: 985px; top: 224px; position: absolute">
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
           <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
+          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
         </div>
         <div style="left: 89px; top: 15px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">415 m</div>
         <div style="left: 215px; top: 14px; position: absolute; color: #616161; font-size: 32px; font-family: Rubik; font-weight: 500; word-wrap: break-word">2</div>
       </div>
       <div style="width: 100px; height: 100px; left: 715px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 0.03px; height: 0px; left: 40px; top: 60px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.85px; height: 3.90px; left: 30.57px; top: 46.67px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 37.71px; height: 7.81px; left: 21.14px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 56.67px; height: 11.72px; left: 11.72px; top: 20px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute" src="{% static 'webapp/wifi.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 850px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 20px; height: 46.67px; left: 10px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 23.33px; left: 60px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 0px; left: 20px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 36.67px; left: 30px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 0.03px; height: 0px; left: 20px; top: 33.33px; position: absolute; border: 2px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute" src="{% static 'webapp/toilet-paper.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 985px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 40px; height: 56.67px; left: 20px; top: 13.33px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+          <img style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute" src="{% static 'webapp/flame.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 1120px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 11px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 13.33px; height: 3.33px; left: 33.33px; top: 13.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 27.40px; left: 40px; top: 6.67px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 59.76px; top: 20.89px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.76px; height: 22.36px; left: 50.10px; top: 23.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 59.76px; top: 47.56px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 28.73px; height: 10.83px; left: 40.14px; top: 45.83px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 13.33px; height: 3.33px; left: 33.33px; top: 63.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 27.40px; left: 30px; top: 45.93px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 13.57px; top: 47.56px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.76px; height: 22.36px; left: 11.13px; top: 34.31px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 13.57px; top: 20.89px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 28.73px; height: 10.83px; left: 11.13px; top: 23.33px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 11px; position: absolute" src="{% static 'webapp/snowflake.svg' %}"/>
       </div>
       <div style="width: 310px; height: 80px; left: 919px; top: 312px; position: absolute">
         <div style="left: 100px; top: 17px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">Prečko 2a</div>
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
           <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 60px; height: 53.33px; left: 10px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 43.33px; left: 30px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 18.33px; left: 50px; top: 23.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 20px; height: 23.34px; left: 53.33px; top: 50px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 0.03px; left: 63.33px; top: 60px; position: absolute; border: 5px #616161 solid"></div>
+          <div style="width: 60px; height: 53.33px; left: 10px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 43.33px; left: 30px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 18.33px; left: 50px; top: 23.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 20px; height: 23.34px; left: 53.33px; top: 50px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 0.03px; left: 63.33px; top: 60px; position: absolute; border: 5px #616161 "></div>
         </div>
       </div>
     </div>
     <div style="width: 1260px; height: 560px; left: 90px; top: 1408px; position: absolute">
       <div style="width: 1260px; height: 560px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 20px"></div>
-      <img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="https://via.placeholder.com/650x560" />
+      <img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="{% static 'webapp/tresnjevka-jug-gajevo-dvorana.jpg' %}" />
       <div style="left: 934px; top: 40px; position: absolute; color: #072447; font-size: 72px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">Dvorana</div>
       <div style="left: 978px; top: 132px; position: absolute; color: #8EAFDD; font-size: 48px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">MO Gajevo</div>
       <div style="width: 235px; height: 80px; left: 985px; top: 224px; position: absolute">
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
           <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
+          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
         </div>
         <div style="left: 89px; top: 15px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">190 m</div>
         <div style="left: 215px; top: 14px; position: absolute; color: #616161; font-size: 32px; font-family: Rubik; font-weight: 500; word-wrap: break-word">2</div>
       </div>
       <div style="width: 100px; height: 100px; left: 715px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 0.03px; height: 0px; left: 40px; top: 60px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.85px; height: 3.90px; left: 30.57px; top: 46.67px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 37.71px; height: 7.81px; left: 21.14px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 56.67px; height: 11.72px; left: 11.72px; top: 20px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute" src="{% static 'webapp/wifi.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 850px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 20px; height: 46.67px; left: 10px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 23.33px; left: 60px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 0px; left: 20px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 36.67px; left: 30px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 0.03px; height: 0px; left: 20px; top: 33.33px; position: absolute; border: 2px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute" src="{% static 'webapp/toilet-paper.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 985px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 40px; height: 56.67px; left: 20px; top: 13.33px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+          <img style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute" src="{% static 'webapp/flame.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 1120px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 11px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 13.33px; height: 3.33px; left: 33.33px; top: 13.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 27.40px; left: 40px; top: 6.67px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 59.76px; top: 20.89px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.76px; height: 22.36px; left: 50.10px; top: 23.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 59.76px; top: 47.56px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 28.73px; height: 10.83px; left: 40.14px; top: 45.83px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 13.33px; height: 3.33px; left: 33.33px; top: 63.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 27.40px; left: 30px; top: 45.93px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 13.57px; top: 47.56px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.76px; height: 22.36px; left: 11.13px; top: 34.31px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 6.67px; height: 11.55px; left: 13.57px; top: 20.89px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 28.73px; height: 10.83px; left: 11.13px; top: 23.33px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 11px; position: absolute" src="{% static 'webapp/snowflake.svg' %}"/>
       </div>
       <div style="width: 410px; height: 80px; left: 810px; top: 312px; position: absolute">
         <div style="left: 100px; top: 17px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">Koprivnička 47</div>
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
           <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 60px; height: 53.33px; left: 10px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 43.33px; left: 30px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 18.33px; left: 50px; top: 23.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 20px; height: 23.34px; left: 53.33px; top: 50px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 0.03px; left: 63.33px; top: 60px; position: absolute; border: 5px #616161 solid"></div>
+          <div style="width: 60px; height: 53.33px; left: 10px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 43.33px; left: 30px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 18.33px; left: 50px; top: 23.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 20px; height: 23.34px; left: 53.33px; top: 50px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 0.03px; left: 63.33px; top: 60px; position: absolute; border: 5px #616161 "></div>
         </div>
       </div>
     </div>
     <div style="width: 1260px; height: 560px; left: 90px; top: 2008px; position: absolute">
       <div style="width: 1260px; height: 560px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 20px"></div>
-      <img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="https://via.placeholder.com/650x560" />
+      <img style="width: 650px; height: 560px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="{% static 'webapp/precko2-prostorija.jpg' %}" />
       <div style="left: 786px; top: 40px; position: absolute; color: #072447; font-size: 72px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">Prostorija 10</div>
       <div style="left: 975px; top: 132px; position: absolute; color: #8EAFDD; font-size: 48px; font-family: Space Grotesk; font-weight: 700; word-wrap: break-word">MO Prečko</div>
       <div style="width: 217px; height: 80px; left: 1003px; top: 224px; position: absolute">
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
           <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
+          <div style="width: 53.33px; height: 53.33px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 26.67px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 10px; height: 0px; left: 13.33px; top: 40px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 6.67px; height: 0px; left: 13.33px; top: 53.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 26.67px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 10px; left: 40px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
+          <div style="width: 0px; height: 6.67px; left: 53.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
         </div>
         <div style="left: 89px; top: 15px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">80 m</div>
         <div style="left: 197px; top: 14px; position: absolute; color: #616161; font-size: 32px; font-family: Rubik; font-weight: 500; word-wrap: break-word">2</div>
       </div>
+
       <div style="width: 100px; height: 100px; left: 850px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 0.03px; height: 0px; left: 40px; top: 60px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 18.85px; height: 3.90px; left: 30.57px; top: 46.67px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 37.71px; height: 7.81px; left: 21.14px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 56.67px; height: 11.72px; left: 11.72px; top: 20px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute" src="{% static 'webapp/toilet-paper.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 985px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 13px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 20px; height: 46.67px; left: 10px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 10px; height: 23.33px; left: 60px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 0px; left: 20px; top: 10px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 40px; height: 36.67px; left: 30px; top: 33.33px; position: absolute; border: 5px #072447 solid"></div>
-          <div style="width: 0.03px; height: 0px; left: 20px; top: 33.33px; position: absolute; border: 2px #072447 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute" src="{% static 'webapp/flame.svg' %}"/>
       </div>
       <div style="width: 100px; height: 100px; left: 1120px; top: 420px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: rgba(142.44, 175.05, 221.41, 0.50); border-radius: 20px"></div>
-        <div style="width: 80px; height: 80px; left: 10px; top: 10px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 40px; height: 56.67px; left: 20px; top: 13.33px; position: absolute; border: 5px #072447 solid"></div>
-        </div>
-      </div>
-      <div style="width: 310px; height: 80px; left: 910px; top: 312px; position: absolute">
-        <div style="left: 100px; top: 17px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">Prečko 2a</div>
-        <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute">
-          <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 60px; height: 53.33px; left: 10px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 43.33px; left: 30px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 18.33px; left: 50px; top: 23.33px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 20px; height: 23.34px; left: 53.33px; top: 50px; position: absolute; border: 5px #616161 solid"></div>
-          <div style="width: 0px; height: 0.03px; left: 63.33px; top: 60px; position: absolute; border: 5px #616161 solid"></div>
-        </div>
+        <img style="width: 80px; height: 80px; left: 10px; top: 11px; position: absolute" src="{% static 'webapp/snowflake.svg' %}"/>
       </div>
     </div>
     <div style="width: 512px; height: 20px; left: 464px; top: 2519px; position: absolute; background: #616161; border-radius: 10px"></div>
@@ -217,60 +138,47 @@
       <div style="width: 1440px; height: 256px; left: 0px; top: 0px; position: absolute; background: #072447"></div>
       <div style="width: 156px; height: 156px; left: 1247px; top: 50px; position: absolute">
         <div style="width: 156px; height: 156px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 104px; height: 0px; left: 26px; top: 39px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 104px; height: 0px; left: 26px; top: 78px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 104px; height: 0px; left: 26px; top: 117px; position: absolute; border: 5px white solid"></div>
+        <div style="width: 104px; height: 0px; left: 26px; top: 39px; position: absolute; border: 5px "></div>
+        <div style="width: 104px; height: 0px; left: 26px; top: 78px; position: absolute; border: 5px "></div>
+        <div style="width: 104px; height: 0px; left: 26px; top: 117px; position: absolute; border: 5px "></div>
       </div>
-      <div style="width: 396.51px; height: 156px; left: 50px; top: 50px; position: absolute">
-        <div style="width: 18.61px; height: 25.82px; left: 196.97px; top: 30.91px; position: absolute; background: white"></div>
-        <div style="width: 16.18px; height: 24.91px; left: 220.29px; top: 31.36px; position: absolute; background: white"></div>
-        <div style="width: 18.92px; height: 24.90px; left: 238.80px; top: 31.37px; position: absolute; background: white"></div>
-        <div style="width: 19.22px; height: 24.90px; left: 261.36px; top: 31.37px; position: absolute; background: white"></div>
-        <div style="width: 25.52px; height: 42.02px; left: 197.63px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 31.91px; height: 42.02px; left: 226.94px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 31.40px; height: 43.56px; left: 262.80px; top: 83.01px; position: absolute; background: white"></div>
-        <div style="width: 27.29px; height: 42.03px; left: 302.14px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 25.32px; height: 42.02px; left: 336.31px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 27.59px; height: 42.03px; left: 368.92px; top: 83.78px; position: absolute; background: white"></div>
-        <div style="width: 5.15px; height: 156px; left: 158.73px; top: 0px; position: absolute; background: white"></div>
-        <div style="width: 127.53px; height: 156px; left: 0px; top: 0px; position: absolute; background: white"></div>
-      </div>
+      <img style="width: 396.51px; height: 156px; left: 50px; top: 50px; position: absolute" src="{% static 'webapp/zagreb-zicer-logo.svg' %}"></div>
     </div>
     <div style="width: 1440px; height: 180px; left: 0px; top: 0px; position: absolute">
       <div style="width: 1440px; height: 180px; left: 0px; top: 0px; position: absolute; background: #1F1F1F"></div>
       <div style="width: 100px; height: 100px; left: 40px; top: 40px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 75px; height: 37.50px; left: 12.50px; top: 12.50px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 58.33px; height: 37.50px; left: 20.83px; top: 50px; position: absolute; border: 5px white solid"></div>
+        <div style="width: 75px; height: 37.50px; left: 12.50px; top: 12.50px; position: absolute; border: 5px "></div>
+        <div style="width: 58.33px; height: 37.50px; left: 20.83px; top: 50px; position: absolute; border: 5px "></div>
       </div>
       <div style="width: 100px; height: 100px; left: 1300px; top: 40px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 45.83px; position: absolute; background: white; border: 2px white solid"></div>
-        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 75px; position: absolute; background: white; border: 2px white solid"></div>
-        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 16.67px; position: absolute; background: white; border: 2px white solid"></div>
+        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 45.83px; position: absolute; background: white; border: 2px "></div>
+        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 75px; position: absolute; background: white; border: 2px "></div>
+        <div style="width: 8.33px; height: 8.33px; left: 45.83px; top: 16.67px; position: absolute; background: white; border: 2px "></div>
       </div>
       <div style="width: 100px; height: 100px; left: 1250px; top: 40px; position: absolute; transform: rotate(180deg); transform-origin: 0 0">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 58.33px; height: 58.33px; left: 29.17px; top: 29.17px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 56.25px; height: 57.24px; left: 12.50px; top: 12.50px; position: absolute; border: 5px white solid"></div>
+        <div style="width: 58.33px; height: 58.33px; left: 29.17px; top: 29.17px; position: absolute; border: 5px "></div>
+        <div style="width: 56.25px; height: 57.24px; left: 12.50px; top: 12.50px; position: absolute; border: 5px "></div>
       </div>
       <div style="width: 100px; height: 100px; left: 1000px; top: 40px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 0px; height: 58.33px; left: 50px; top: 20.83px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 58.33px; height: 0px; left: 20.83px; top: 50px; position: absolute; border: 5px white solid"></div>
+        <div style="width: 0px; height: 58.33px; left: 50px; top: 20.83px; position: absolute; border: 5px "></div>
+        <div style="width: 58.33px; height: 0px; left: 20.83px; top: 50px; position: absolute; border: 5px "></div>
       </div>
       <div style="width: 780px; height: 100px; left: 180px; top: 43px; position: absolute; background: #616161; border-radius: 50px"></div>
       <div style="width: 65px; height: 65px; left: 206px; top: 61px; position: absolute">
         <div style="width: 65px; height: 65px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 10.83px; height: 10.83px; left: 32.50px; top: 10.83px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 21.67px; height: 0px; left: 10.83px; top: 16.25px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 10.83px; height: 0px; left: 43.33px; top: 16.25px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 10.83px; height: 10.83px; left: 16.25px; top: 27.08px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 5.42px; height: 0px; left: 10.83px; top: 32.50px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 27.08px; height: 0px; left: 27.08px; top: 32.50px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 10.83px; height: 10.83px; left: 40.62px; top: 43.33px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 29.79px; height: 0px; left: 10.83px; top: 48.75px; position: absolute; border: 5px white solid"></div>
-        <div style="width: 2.71px; height: 0px; left: 51.46px; top: 48.75px; position: absolute; border: 5px white solid"></div>
+        <div style="width: 10.83px; height: 10.83px; left: 32.50px; top: 10.83px; position: absolute; border: 5px "></div>
+        <div style="width: 21.67px; height: 0px; left: 10.83px; top: 16.25px; position: absolute; border: 5px "></div>
+        <div style="width: 10.83px; height: 0px; left: 43.33px; top: 16.25px; position: absolute; border: 5px "></div>
+        <div style="width: 10.83px; height: 10.83px; left: 16.25px; top: 27.08px; position: absolute; border: 5px "></div>
+        <div style="width: 5.42px; height: 0px; left: 10.83px; top: 32.50px; position: absolute; border: 5px "></div>
+        <div style="width: 27.08px; height: 0px; left: 27.08px; top: 32.50px; position: absolute; border: 5px "></div>
+        <div style="width: 10.83px; height: 10.83px; left: 40.62px; top: 43.33px; position: absolute; border: 5px "></div>
+        <div style="width: 29.79px; height: 0px; left: 10.83px; top: 48.75px; position: absolute; border: 5px "></div>
+        <div style="width: 2.71px; height: 0px; left: 51.46px; top: 48.75px; position: absolute; border: 5px "></div>
       </div>
       <div style="left: 295px; top: 69px; position: absolute; color: white; font-size: 44px; font-family: Inter; font-weight: 400; word-wrap: break-word">katica.zagreb.hr/prostori</div>
     </div>
@@ -279,10 +187,10 @@
       <div style="left: 22px; top: 34px; position: absolute; color: #072447; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">površina</div>
       <div style="width: 90px; height: 90px; left: 222px; top: 15px; position: absolute">
         <div style="width: 90px; height: 90px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 18.75px; height: 18.75px; left: 18.75px; top: 18.75px; position: absolute; border: 5px #072447 solid"></div>
-        <div style="width: 18.75px; height: 18.75px; left: 18.75px; top: 52.50px; position: absolute; border: 5px #072447 solid"></div>
-        <div style="width: 22.50px; height: 11.25px; left: 52.50px; top: 56.25px; position: absolute; border: 5px #072447 solid"></div>
-        <div style="width: 0px; height: 45px; left: 63.75px; top: 22.50px; position: absolute; border: 5px #072447 solid"></div>
+        <div style="width: 18.75px; height: 18.75px; left: 18.75px; top: 18.75px; position: absolute; border: 5px #072447 "></div>
+        <div style="width: 18.75px; height: 18.75px; left: 18.75px; top: 52.50px; position: absolute; border: 5px #072447 "></div>
+        <div style="width: 22.50px; height: 11.25px; left: 52.50px; top: 56.25px; position: absolute; border: 5px #072447 "></div>
+        <div style="width: 0px; height: 45px; left: 63.75px; top: 22.50px; position: absolute; border: 5px #072447 "></div>
       </div>
     </div>
     <div style="left: 128px; top: 684px; position: absolute; color: #616161; font-size: 44px; font-family: Rubik; font-weight: 500; word-wrap: break-word">4 rezultata</div>
@@ -302,11 +210,12 @@
       </div>
       <div style="width: 100px; height: 100px; left: 1129px; top: 0px; position: absolute">
         <div style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 50px; height: 25px; left: 25px; top: 37.50px; position: absolute; border: 5px #616161 solid"></div>
+        <div style="width: 50px; height: 25px; left: 25px; top: 37.50px; position: absolute; border: 5px #616161 "></div>
       </div>
       <div style="width: 80px; height: 80px; left: 0px; top: 10px; position: absolute">
         <div style="width: 80px; height: 80px; left: 0px; top: 0px; position: absolute"></div>
-        <div style="width: 53.33px; height: 56.67px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 solid"></div>
+        <div style="width: 53.33px; height: 56.67px; left: 13.33px; top: 13.33px; position: absolute; border: 5px #616161 "></div>
       </div>
     </div>
 </div>
+{% endblock %}
