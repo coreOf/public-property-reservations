@@ -1,5 +1,11 @@
-# public-property-reservations
+# Katica: public property reservation app
+
 Public property reservation manager for Hackl 2023 hackathon
+
+# Design resources
+ - [wireframe](https://www.figma.com/file/FwuhjTwBp48uJxL4UofQaz/Hackl-Tim-%239?type=design&node-id=0%3A1&mode=design&t=MTpLHrVTZpxMIilI-1) in Figma
+ - [tabler.io](https://tabler-icons.io/) icons
+
 
 # Quick setup
 
